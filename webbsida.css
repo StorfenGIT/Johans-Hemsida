@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+    border: 1px solid black;
+}
+p {
+    text-align: center;
+    
+}
+div {
+    text-align: center;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas:
+      "header header header"
+      "left main right"
+      "footer footer footer";
+      font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .header {
+    grid-area: header;
+    position: sticky;
+    background-color:grey;
+    font-size: x-large;
+    border: 1px solid black;
+  }
+  
+  .left {
+    grid-area: left;
+    border-right: 1px solid black;
+    font-size: larger;
+    background-image: url("unnamed.png");
+    background-size: cover;
+  }
+  
+  .main {
+    grid-area: main;
+    font-size: larger;
+    background-image: url("forza.jpg");
+    background-size: cover;
+  }
+  
+  .right {
+    grid-area: right;
+    border-left: 1px solid black;
+    font-size: larger;
+    background-image: url("Skidor.jpg");
+    background-size: cover;
+  }
+  
+  .footer {
+    grid-area: footer;
+    border: 1px solid black;
+    font-size: larger;
+    background-color: grey
+    }
