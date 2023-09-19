@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+body {
+    min-height: 100vh;
+    background: url("daniel-cheung-cPF2nlWcMY4-unsplash.jpg") no-repeat;
+    box-sizing: cover;
+    background-position: center;
+    background-size: cover;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 32px;
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+    -webkit-text-stroke: 1px black;
+     
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color:white;
+    -webkit-text-stroke: 1px black;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+.navbar a::before {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transition: .3s;
+
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      
+      
+    }
+  }
