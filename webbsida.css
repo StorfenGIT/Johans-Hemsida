@@ -57,3 +57,10 @@ div {
     font-size: larger;
     background-color: grey
     }
+    /* Detta påverkar design baserat på storleken på skrämen, på så sätt kan man få större text och mer kompakt design för mobiltelefoner */
+@media screen and (max-width: 600px) {
+  body {
+    font-size:x-large
+    
+  }
+}
