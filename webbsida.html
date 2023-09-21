@@ -3,39 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Johans hemsida</title>
-    <!-- Här länkar jag till en extern font från google family -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Mono&display=swap"
-    />
-    <!-- Här länkar jag till en tillhörande CSS fil-->
+    <title>Min hemsida</title>
     <link rel="stylesheet" href="webbsida.css" />
+    <script
+      src="https://kit.fontawesome.com/163dda6850.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Varmt välkommen till min hemsida</h1>
-    <p>Mitt namn är Johan och jag är 22 år gammal. Jag studerar just nu till Frontenddutevcklare med inriktning Webbsäkrhet. Vid sidan av så studerar jag även på Södertörns högskola där jag läser ubtildningen Management med IT. Jag har flera intressen som jag utövar tillsammans med kompisar eller familj.
-  </p1>
-  <button>Hem</button>
-  <button>Om mig</button>
-  <button>Kontakt</button>
-  <br>
-  <br>
-  <p2>Några av mina intressen är:</p2>
-    <ul>
-      <li>Spela golf</li>
-      <li>Spela datorspel</li>
-      <li>Åka skidor</li>
-      <li>Umgås med kompisar</li>
-      <li>Köra schack</li>
-    </ul>
-    <div class="container">
-      <div class="header">Mer om mina intressen</div>
-      <div class="left">Golf <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, commodi sapiente voluptates quasi laudantium neque, alias eum provident exercitationem in veniam quo eaque repellendus libero beatae voluptas suscipit fuga inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque non eos iste doloribus laboriosam, maiores explicabo, facere deleniti magnam, odit eveniet pariatur excepturi placeat quam ipsa esse ullam unde. Lorem,soluta eaque, non eius autem ipsa! Praesentium! 
-      </div>
-      <div class="main">Datorspel</div>
-      <div class="right">Skidåkning</div>
-      <div class="footer">
-        Kontaktinformation: johber01@gmail.com , 072-737 10 04
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Hem</label>
+      <ul>
+        <li><a class="active" href="index.html">Hem</a></li>
+        <li><a href="mig.html">Om mig</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
