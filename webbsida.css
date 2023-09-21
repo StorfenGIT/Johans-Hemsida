@@ -72,3 +72,8 @@ a.active,a:hover {
 #check {
     display: none;
 }
+section {
+    background: url("zakaria-ahada-VGR_ReUCqNw-unsplash.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
