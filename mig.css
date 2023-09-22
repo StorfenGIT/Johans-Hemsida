@@ -89,3 +89,67 @@ section {
     background-size: cover;
     height: calc(100vh - 80px);
 }
+@media screen and (max-width: 858px) {
+    label.logo {
+        font-size: 20px;
+        padding-left: 30px;
+        display: block;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+@media  screen and (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(52, 93, 141);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    
+    }
+    a:hover,a.active {
+        color: whitesmoke;
+    }
+    #check:checked ~ ul {
+        left: 0;
+
+    }
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        display: none;
+    }
+    p {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    section {
+        background-size: 200%;
+        background-repeat: repeat;
+        height: 160vh;
+    }
+}
+@media screen and (max-width: 400px) {
+    section {
+        background-size: 200%;
+        background-repeat: repeat;
+        height: 200vh;
+    }
+}
