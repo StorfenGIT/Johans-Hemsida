@@ -4,25 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Min hemsida</title>
+
+    <!-- Här länkar jag till css -->
     <link rel="stylesheet" href="mig.css" />
+
+    <!-- Här har jag hämtat ett externt kit som ger mig möjligheten att använda ikoner -->
     <script
       src="https://kit.fontawesome.com/163dda6850.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- Detta är koden för att navigationsbar som ska stylas i css -->
     <nav>
+      <!-- fas fa-bars är text för att få en viss ikon, i detta fall är det en hamburgarmeny -->
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
       <label class="logo">Om mig</label>
+
+      <!-- En lista som kopplar samman de olika sidorna "hem", "om mig" och "kontakt" -->
       <ul>
         <li><a href="webbsida.html">Hem</a></li>
         <li><a class="active" href="mig.html">Om mig</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
+
+    <!-- Ett gallery som behandlar flera bilder -->
     <div class="gallery">
       <a target="blank" href="golf.jpg">
         <img src="golf.jpg" alt="Kan ej visas" />
@@ -56,6 +66,7 @@
           <h1>Mina aktiviteter</h1>
         </div>
         <div class="paragraph">
+          <!-- Anledningen till varför jag radbryter mitt i texten är för att jag vill att texten inte ska bli för lång, det skulle innebär att texten fortsätter under bilderna vilket inte ser så bra ut -->
           <p>
             På min fritid gillar jag bland annat att spela golf. Jag brukar
             vanligtvis spela golf tillsammans med min pappa på helger när vi har

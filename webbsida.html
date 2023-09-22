@@ -4,25 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Johans hemsida</title>
+    <!-- Här länkar jag till css -->
     <link rel="stylesheet" href="webbsida.css" />
+
+    <!-- Här har jag hämtat ett externt kit som ger mig möjligheten att använda ikoner -->
     <script
       src="https://kit.fontawesome.com/163dda6850.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- Detta är koden för att navigationsbar som ska stylas i css -->
     <nav>
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
+        <!-- fas fa-bars är text för att få en viss ikon, i detta fall är det en hamburgarmeny -->
         <i class="fas fa-bars"></i>
       </label>
       <label class="logo">Hem</label>
+
+      <!-- En lista som kopplar samman de olika sidorna "hem", "om mig" och "kontakt" -->
       <ul>
         <li><a class="active" href="webbsida.html">Hem</a></li>
         <li><a href="mig.html">Om mig</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
+
+    <!-- Ett gallery som behandlar en bild -->
     <div class="gallery">
       <a target="blank" href="johanbild.jpg">
         <img src="johanbild.jpg" alt="Kan ej visas" />
@@ -33,6 +42,8 @@
         Du är välkommen att kontakta mig vid eventuella frågor.
       </div>
     </div>
+
+    <!-- Saknar innehåll eftersom den enbart ska stylas i css som en bakgrund -->
     <section></section>
   </body>
 </html>

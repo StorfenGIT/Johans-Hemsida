@@ -4,25 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Min hemsida</title>
+
+    <!-- Här länkar jag till css -->
     <link rel="stylesheet" href="kontakt.css" />
+
+    <!-- Här har jag hämtat ett externt kit som ger mig möjligheten att använda ikoner -->
     <script
       src="https://kit.fontawesome.com/163dda6850.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- Detta är koden för att navigationsbar som ska stylas i css -->
     <nav>
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
+        <!-- fas fa-bars är text för att få en viss ikon, i detta fall är det en hamburgarmeny -->
         <i class="fas fa-bars"></i>
       </label>
       <label class="logo">Kontakt</label>
+
+      <!-- En lista som kopplar samman de olika sidorna "hem", "om mig" och "kontakt" -->
       <ul>
         <li><a href="webbsida.html">Hem</a></li>
         <li><a href="mig.html">Om mig</a></li>
         <li><a class="active" href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
+
+    <!-- Olika klassar som skapar en grund för ett förmulär där man kan fylla i förnamn, efternamn, mejladress och sin fråga -->
     <section>
       <div class="container">
         <form class="contact-form">
@@ -43,10 +53,13 @@
             <input type="text" id="subject" name="subject" required />
           </div>
           <div class="form-group">
+            <!-- Gör det möjligt att skica formuläret, däremot är det inte länkat till något så allt som skickas in hamnar i ingemansland -->
             <button type="submit">Skicka</button>
           </div>
         </form>
       </div>
+
+      <!-- Här länkar jag mina profiler på olika plattformar där jag dessutom har lagt till en ikon till respektive platform -->
       <div>
         <a
           href="https://twitter.com/Storfen_"
