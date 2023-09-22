@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min hemsida</title>
+    <link rel="stylesheet" href="kontakt.css" />
+    <script
+      src="https://kit.fontawesome.com/163dda6850.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Kontakt</label>
+      <ul>
+        <li><a href="webbsida.html">Hem</a></li>
+        <li><a href="mig.html">Om mig</a></li>
+        <li><a class="active" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="container">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="first-name">Förnnamn</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Efternamn</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Mejladress</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Din fråga</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <button type="submit">Skicka</button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <a
+          href="https://twitter.com/Storfen_"
+          class="fa-brands fa-square-x-twitter"
+          id="twitter"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/johan-bernstorf-891827286/_"
+          class="fa-brands fa-linkedin"
+          id="linkin"
+        ></a>
+        <a
+          href="https://www.facebook.com/johan.bernstorf"
+          class="fa-brands fa-square-facebook"
+          id="facbok"
+        ></a>
+      </div>
+    </section>
+  </body>
+</html>
