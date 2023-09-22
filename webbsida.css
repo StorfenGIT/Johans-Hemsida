@@ -1,3 +1,4 @@
+/* En allmän style som gäller för alla element */
 *{
     padding: 0;
     margin: 0;
@@ -6,31 +7,43 @@
     box-sizing: border-box;
     font-family:'Times New Roman', Times, serif;
 }
+
+/* justerar position på elementen och bilderna i galleriet */
 div.gallery {
     float: left;
     margin-left: 50px;
     margin-top: 15px;
     
 }
+
+/* Style på den ram som dycker upp när man hovrar över bilden */
 div.gallery:hover {
     border: 1px solid #777;
     
-}  
+} 
+
+/* Styr bildens bredd och höjd */
 div.gallery img {
     width: 100%;
     height: 300px;
 
 }
+
+/* Stylar texten under bilden */
 div.desc {
     padding: 15px;
     text-align: center;
     color: white;
 }
+
+/* Stylar navbar med färg, höjd och att den är lika bred som skärmen */
 nav {
     background: goldenrod;
     height: 80px;
     width: 100%;
 }
+
+/* Stylar logotypen i navbar som i det här fallet är "hem" */
 label {
     color: whitesmoke;
     font-size: 35px;
@@ -38,27 +51,36 @@ label {
     padding: 0 100px;
     font-weight: bold;
 }
+
+/* Bestämmer position på knapprana "hem", "om mig" och "kontakt" */
 nav ul {
     float: right;
     margin-right: 20px;
 }
+
+/* Lägger knapprna "hem", "om mig" och "kontakt" på rad i navbar */
 nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
+
+/* Stylar knapparna som finns på navigationsbaren */
 nav ul li a {
     color: whitesmoke;
     font-size: 17px;
     text-transform: uppercase;
     padding: 7px 13px;
     border-radius: 3px;
-
 }
+
+/* Påverkar effekten och färgen när man hovrar över navbar knapparna och bilden */
 a.active,a:hover {
     background:#000000;
     transition: .5s;
 }
+
+/* Förändrar utseendet på hamburgarmenyn */
 .checkbtn {
     font-size: 30px;
     color: whitesmoke;
@@ -72,6 +94,16 @@ a.active,a:hover {
 #check {
     display: none;
 }
+
+/* En bakgrund som täcker hela skärmen */
+section {
+    background: url("zakaria-ahada-VGR_ReUCqNw-unsplash.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+
+}
+
+/* Justerar loggan "hem" när skärmen inte är bredare än 858 pixlar för att anpassas till telefoner eller surfplattor */
 @media screen and (max-width: 858px) {
     label.logo {
         font-size: 20px;
@@ -82,6 +114,8 @@ a.active,a:hover {
         font-size: 16px;
     }
 }
+
+/* När skärmen inte är bredare än 858 pixlar så kommer en knapparna hem, om mig och kontakt flyttas och hamna under en så kallad hamburgarmeny.  */
 @media  screen and (max-width: 858px) {
     .checkbtn {
         display: block;
@@ -114,12 +148,8 @@ a.active,a:hover {
 
     }
 }
-section {
-    background: url("zakaria-ahada-VGR_ReUCqNw-unsplash.jpg") no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
 
-}
+/* Anpassar bilden, ramen och texten på så sätt att när skärmen inte är bredare än 600 pixlar så flyttas allt och det blir mer användarvänligt för telefoner, är dock inte helt perfekt */
 @media screen and (max-width: 600px) {
     div.gallery {
         width: 180px;

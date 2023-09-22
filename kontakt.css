@@ -1,3 +1,4 @@
+/* En allmän style som gäller för alla element */
 *{
     padding: 0;
     margin: 0;
@@ -6,11 +7,15 @@
     box-sizing: border-box;
     font-family:'Times New Roman', Times, serif;
 }
+
+/* Stylar navbar med färg, höjd och att den är lika bred som skärmen */
 nav {
     background: goldenrod;
     height: 80px;
     width: 100%;
 }
+
+/* Stylar logotypen i navbar som i det här fallet är "kontakt" */
 label {
     color: whitesmoke;
     font-size: 35px;
@@ -18,15 +23,21 @@ label {
     padding: 0 100px;
     font-weight: bold;
 }
+
+/* Bestämmer position på knapprana "hem", "om mig" och "kontakt" */
 nav ul {
     float: right;
     margin-right: 20px;
 }
+
+/* Lägger knapprna "hem", "om mig" och "kontakt" på rad i navbar */
 nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
+
+/* Stylar knapparna som finns på navigationsbaren */
 nav ul li a {
     color: whitesmoke;
     font-size: 17px;
@@ -34,10 +45,14 @@ nav ul li a {
     padding: 7px 13px;
     border-radius: 3px;
 }
+
+/* Påverkar effekten och färgen när man hovrar över navbar knapparna och bilden */
 a.active,a:hover {
     background:rgb(0, 0, 0);
     transition: .5s;
 }
+
+/* Förändrar utseendet på hamburgarmenyn */
 .checkbtn {
     font-size: 30px;
     color: whitesmoke;
@@ -49,39 +64,46 @@ a.active,a:hover {
 }
 #check {
     display: none;
+}
 
-}
-body {
-    margin: 0;
-    padding: 0;
-}
+/* En bakgrund som täcker hela skärmen */
 section {
     background: url("stefan-cosma-GVlcXhQejA8-unsplash.jpg") no-repeat;
     background-size: cover;
     height: 100vh;
 
 }
+
+/* Centrerar förmuläret mitt i skärmen */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
 }
+
+/* Stylar formuläret */
 .contact-form {
     background-color: transparent;
     text-align: center;
 }
+
+/* Stylar formulärets knappar */
 .form-group label {
     display: block;
     font-size: 20px;
  
 }
+
+/* Stylar formulärets rutor där användaren fyller i informationen */
 .form-group input {
     width: 100%;
     padding: 10px;
     margin-bottom: 2px;
     border: 3px solid #DAA520; 
 }
+
+/* Stylar "skicka" knappen */
 .form-group button {
     background-color: goldenrod;
     color: #fff;
@@ -90,9 +112,13 @@ section {
     border-radius: 5px;
     margin-top: 5px;
 }
+
+/* Stylar knappen "skicka" när man hovrar över den */
 .form-group button:hover {
     background-color: rgb(253, 218, 19);
 }
+
+/* Stylar twitter som numera kallas "x" logotypen */
 #twitter {
     font-size: 50px;
     color: whitesmoke;
@@ -101,6 +127,8 @@ section {
     margin-right: 50px;
     cursor: pointer;   
 }
+
+/* Stylar linkedin logotypen */
 #linkin {
     font-size: 50px;
     color: whitesmoke;
@@ -109,6 +137,8 @@ section {
     margin-right: 50px;
     cursor: pointer;
 }
+
+/* Stylar facebook logotypen */
 #facbok {
     font-size: 50px;
     color: whitesmoke;
@@ -117,6 +147,8 @@ section {
     margin-right: 50px;
     cursor: pointer;
 }
+
+/* Justerar loggan "hem" när skärmen inte är bredare än 858 pixlar för att anpassas till telefoner eller surfplattor */
 @media screen and (max-width: 858px) {
     label.logo {
         font-size: 20px;
@@ -127,6 +159,8 @@ section {
         font-size: 16px;
     }
 }
+
+/* När skärmen inte är bredare än 858 pixlar så kommer en knapparna hem, om mig och kontakt flyttas och hamna under en så kallad hamburgarmeny.  */
 @media screen and (max-width: 858px) {
     .checkbtn {
         display: block;
@@ -159,6 +193,8 @@ section {
 
     }
 }
+
+/* Anpassar förmmuläret när skärmen inte är bredare än 600 pixlar */
 @media screen and (max-width: 600px) {
     .contact-form {
         max-width: 90%; 
