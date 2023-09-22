@@ -84,3 +84,8 @@ a.active,a:hover {
     display: none;
 
 }
+section {
+    background: url("codioful-formerly-gradienta-QWutu2BRpOs-unsplash.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
